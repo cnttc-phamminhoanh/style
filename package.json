@@ -1,0 +1,25 @@
+{
+  "name": "style-vidia-stacks",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "sst start",
+    "build:dev": "sst build --stage=development",
+    "deploy:dev": "sst deploy --stage=development",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@serverless-stack/cli": "^1.2.30",
+    "@serverless-stack/resources": "^1.2.30",
+    "@tsconfig/node16": "^1.0.3",
+    "aws-cdk-lib": "2.50.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.16.0"
+  },
+  "dependencies": {
+    "@sls-next/lambda-at-edge": "^3.7.0"
+  }
+}
